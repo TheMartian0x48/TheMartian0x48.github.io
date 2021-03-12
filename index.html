@@ -16,9 +16,10 @@
       </div>
       <div class="menu">
         <a href="index.html"><b>Home</b></a>
-        <a href="page/about.html"><b>About</b></a>
+        <a href="page/blog.html"><b>Blog</b></a>
         <a href="page/resume.html"><b>Resume</b></a>
         <a href="page/project.html"><b>Project</b></a>
+        <a href="page/about.html"><b>About</b></a>
         <a href="page/contact.html"><b>Contact</b></a>
       </div>
       <div class="social-media">
@@ -33,29 +34,53 @@
 
     <div class="main">
       <div class="article">
-      <h1>Lorem Lpsum</h1>
-      <h2>why don't you ask me?</h2>
-      <h3>Hello there</h3>        
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non felis quis orci euismod volutpat. Suspendisse posuere interdum convallis. Aliquam imperdiet ipsum eu ultrices placerat. Integer bibendum fermentum nulla, at fermentum augue porttitor fringilla. Vestibulum vitae tortor quis lacus commodo vulputate. Morbi arcu augue, vulputate quis consequat nec, tincidunt eget tellus. Aenean convallis ligula non mattis placerat. Fusce iaculis lacus sed libero tempus molestie.
-          </p>
-          <p>
-          Suspendisse facilisis metus id vestibulum facilisis. Fusce imperdiet semper orci a pharetra. Phasellus vitae ornare orci, ut efficitur felis. Nulla maximus vel magna vel viverra. Aliquam vel aliquam urna. Cras auctor purus vitae tellus pharetra efficitur. Praesent pellentesque libero vitae quam lacinia, in ornare tortor cursus. Ut dictum tristique sodales. Pellentesque vitae arcu vel magna consectetur consequat. Nullam sodales odio eleifend, egestas mi nec, dapibus nisl. Fusce maximus odio nibh, a dignissim turpis luctus vel. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-          </p>
-          <p>
-          Sed blandit nulla eget elit hendrerit posuere. Curabitur sed nibh fringilla, interdum dui ac, ultricies ante. Nullam id elit luctus sem interdum facilisis. Integer elit ipsum, ultricies mattis eleifend quis, efficitur sed ipsum. Nullam id facilisis metus. Maecenas ut ante porta, rhoncus ipsum quis, tristique est. Integer quis rhoncus dui. Proin vitae dignissim ex, eu laoreet metus. Praesent vehicula justo nunc, sed auctor risus eleifend id. Duis tristique dolor urna, a iaculis ipsum viverra vel. Nulla facilisi. Sed molestie fermentum auctor.
-          </p>
-          <p>
-          Nam id risus mauris. Fusce dapibus massa sed est rutrum dapibus. Pellentesque posuere libero est, non mollis purus ultrices quis. Pellentesque pulvinar dui eget elit porta, vitae laoreet lorem congue. Quisque in nibh eros. Aenean viverra congue diam. Pellentesque at odio in augue aliquet dignissim. In quis mi semper est aliquet rutrum fermentum vel leo. Curabitur scelerisque rutrum imperdiet. Suspendisse scelerisque ex massa, vitae suscipit dolor pharetra eget. Vivamus ut maximus orci, quis suscipit dui.
-          </p>
-          <p>
-          Morbi sit amet lacus porta, bibendum tellus sed, vehicula mauris. Integer ac elementum arcu, at aliquet metus. Suspendisse blandit eros mauris, feugiat feugiat neque euismod eu. Proin fringilla congue velit nec bibendum. Vivamus at ipsum finibus, ultrices sapien nec, cursus magna. Maecenas et dolor eget leo fringilla consequat. Cras sed egestas lectus. Fusce ut faucibus mauris, sit amet luctus ante. Maecenas consequat maximus ornare. Ut fermentum fermentum tortor a blandit. Vivamus lacus odio, pretium vel hendrerit id, eleifend sit amet dui. Integer sed risus aliquet, facilisis risus nec, ultrices urna. Nam magna urna, feugiat sed varius et, condimentum vel mi.
-          </p>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Cnm1cMqePSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <img src="trail_division.jpg" alt="">
-          <script src="https://gist.github.com/TheMartian0x48/a2a396d440ccbb98eac57b982e8c8e6b.js"></script>
+        <h1>Sample Blog</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/yXS8iNKqsCM?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <h1>Trail Division</h1>
+
+<h2>Introduction</h2>
+
+<p>Trail division is simplest algorithm to test whether a positive integer is prime or not.  It is a brute force algorithm where we check whether the given number is divisible by and positive integer greater than 2 and less than itself.</p>
+
+<h6>Theorem 1</h6>
+
+<p>A positive integer $ n \gt 1 $ is a prime number iff for all positive integer $ d $, $ d \geq 2 $  and $ d \lt n $ , $ d \nmid n$.</p>
+
+<h6>Observation 1</h6>
+
+<p>In theorem 1, we are doing a lot of extra work. We can improve this vastly by using the fact that $d \geq \lceil \surd n \rceil $ make no useful contribution. Let's prove that.</p>
+
+<p><strong>Proof</strong></p>
+
+<p>Let  k  be positive integer such that  $k \geq \lceil \surd n \rceil$ and $k \lt n$.</p>
+
+<p>As $k * \lceil \surd n \rceil \gt n$ , $ k$ will divide $n$, that is $k * l = n$, if and only if $l \in [2, \lfloor \surd n \rfloor]$ . Since we already examining for all  such possible $l$, it make no need to examine for such $k$. </p>
+
+<p><strong>End of proof</strong></p>
+
+<p>This observation leads to our second theorem. </p>
+
+<h6>Theorem 2</h6>
+
+<p>A positive integer $ n \gt 1 $ is a prime number iff for all positive integer $ d $, $ d \geq 2 $ and $ d \leq \lfloor \surd n \rfloor $, $ d \nmid n$.</p>
+
+<h2>prime vs composite war</h2>
+
+<script src="https://gist.github.com/TheMartian0x48/5d2a718519f27c743febe062f55b3948.js"></script>
+
+<script src="https://gist.github.com/TheMartian0x48/f1545479b13b8b013a4785256c1794ff.js"></script>
+
       </div>
     </div>
   </div>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    };
+    </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
 </html>
