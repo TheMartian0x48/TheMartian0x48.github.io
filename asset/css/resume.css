@@ -1,0 +1,39 @@
+.article > p > a {
+  text-decoration: none;
+  color: #0700ee;
+  font-style: italic;
+}
+.article > p {
+  text-align: center;
+}
+
+#sub-header-note {
+  font-size: 1em;
+}
+h2 {
+  font-size: 1.1em;
+}
+h4{
+  font-size: 1em;
+}
+.article > i {
+  font-size: 1em;
+}
+
+@media only screen and (max-width: 798px) {
+h1{
+  font-size: 1.5em;
+}
+#sub-header-note {
+  font-size: 0.7em;
+}
+h2 {
+  font-size: 1.1em;
+}
+h4{
+  font-size: 0.9em;
+}
+.article > i {
+  font-size: 0.9em;
+}
+}
