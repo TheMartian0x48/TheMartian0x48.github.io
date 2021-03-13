@@ -162,17 +162,49 @@ pre{
 }
 
 
-body .gist .blob-code-inner {
-  font-family: "Fira Code";
+body .gist .gist-file {
+  margin-bottom: 0;
+  border: 1px dashed #adb5bd;
+  border-radius: 0;
+}
+
+body .gist .gist-data {
+  border-bottom: none;
+  border-radius: 0;
+  background-color: #f1f3f5;
+}
+
+body .gist .blob-wrapper {
+  border-radius: 0;
+}
+
+body .gist .highlight {
+  background-color: transparent;
+  font-family: 'Fira Code', monospace;
   font-size: 16px;
 }
 
-body .gist .blob-num{
-  font-size: 14px;
-  background-color: darkred;
-  color: white;
+body .gist .highlight td {
+  padding: 5px 15px !important;
+  line-height: 1;
+  font-family: inherit;
+  font-size: inherit;
 }
 
-body .gist .gist-meta{
+body .gist tr:first-child td {
+  padding-top: 15px !important;
+}
+
+body .gist tr:last-child td {
+  padding-bottom: 15px !important;
+}
+
+body .gist .blob-num {
+  color: white;
+  background-color:#495057;
+  pointer-events: none;
+}
+
+body .gist .gist-meta {
   display: none;
 }
