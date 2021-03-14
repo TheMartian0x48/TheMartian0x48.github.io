@@ -117,7 +117,7 @@ pre{
   .article {
     grid-column: 2 / 9;
     text-align: justify;
-    font-family:  Roboto, sans-serif;
+    font-family:  Fira Code, sans-serif;
   }
 }
 
@@ -136,6 +136,7 @@ pre{
   }
   .article {
     grid-column: 2 / 3;
+    font-family:  Fira Code, sans-serif;
   }
   .social-media > a > img {
     width: 40px;
@@ -160,7 +161,6 @@ pre{
     display: none;
   }
 }
-
 
 body .gist .gist-file {
   margin-bottom: 0;
@@ -207,4 +207,51 @@ body .gist .blob-num {
 
 body .gist .gist-meta {
   display: none;
+}
+
+.blog-description{
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+  border: 1px solid black;
+  margin-bottom: 5px;
+  height: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.blog-description-row1 {
+  grid-row: 1 / 2;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 1px dashed black;
+}
+.blog-description-row1 > h3{
+  margin-top: 1%;
+  margin-bottom: 0%;
+}
+.blog-description-row2 {
+  grid-row:  2 / 3;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-bottom: 1px dashed black;
+}
+.blog-description-row2 > p{
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+.blog-description-row3 {
+  grid-row: 3 / 4;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.blog-description-time > p {
+  line-height: 0%;
+  text-align: center;
+}
+
+.blog-description-link > p {
+  line-height: 0%;
+  text-align: center;
+}
+.blog-description-link > p > a {
+  color: blue;
+  text-decoration: none;
 }

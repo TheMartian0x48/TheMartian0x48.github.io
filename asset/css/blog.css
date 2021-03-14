@@ -1,0 +1,18 @@
+table {
+  width: 100%;
+}
+tr{
+  margin: 5px;
+}
+tr:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+td {
+  border: 1px solid black;
+  padding-left: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+td > a {
+  text-decoration: none;
+}

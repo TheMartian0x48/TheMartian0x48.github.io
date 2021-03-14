@@ -3,6 +3,9 @@
   color: #0700ee;
   font-style: italic;
 }
+.article {
+  font-family:  Roboto, sans-serif;
+}
 .article > p {
   text-align: center;
 }
