@@ -6,7 +6,7 @@ template = template_env.get_template('blogtemplate.html')
 
 f = json.load(open("bloglist.json"))
 
-with open('../page/blog.html', 'w') as output_file:
+with open(f["location"], 'w') as output_file:
   output_file.write(
     template.render(
       blogs=f["blog"]
