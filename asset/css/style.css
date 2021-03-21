@@ -38,6 +38,9 @@ pre{
   overflow-x: auto;
 }
 @media only screen and (min-width: 798px){
+  #myNav {
+    display: none;
+  }
   .container{
     display: grid;
     grid-template-columns: 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% 8.3333% ;
@@ -51,7 +54,6 @@ pre{
     left: 0;
     height: 100%;
     grid-template-rows: 20% 40% 40%;
-    font-family: 'Kalam', cursive;
     text-align: center;
   }
   
@@ -116,6 +118,7 @@ pre{
 }
 
 @media only screen and (max-width: 798px) {
+
   h1 {
     font-size: 2em;
   }
@@ -126,34 +129,76 @@ pre{
   .main{
     display: grid;
     grid-template-columns: 5% 90% 5%;
-    border-top: 1px solid black;
   }
   .article {
     grid-column: 2 / 3;
     font-family: 'Fira Code', monospace;
   }
-  .social-media > a > img {
-    width: 40px;
-  }
-  .menu {
-    text-align: center;
-  }
-  .menu > a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2em;
+
+  .navigation {
+    width: 0%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color:#282a35;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display:block;
   }
   .banner {
+    color: white;
     text-align: center;
-    font-size: 2em;
-    line-height: 0px;
+    font-size: 1.5em;
   }
-  .banner > p {
+  .menu > a{
+    display: table;
+    text-align: center;
+    width: 100%;
+    color: white;font-size: 1.3em;
+    margin-bottom: 2%;
+  }
+  .social-media > a{
+    display: table;
+    width: 100%;
+    text-align: center;
+  }
+  .social-media > a > img {
+    width: 60px;
+  }
+  .closebtn {
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 1.5em;
+    color: white;
+    width: 50px;
+    height: 40px;
+    background-color: darkred;
+    text-align: center;
+    border-radius: 5px;
+  }
+  .navigation a {
+    text-decoration: none;
+  }
+
+  #myNav {
+    cursor:pointer;
+    position: fixed;
     margin: 0px;
+    bottom: 50px;
+    right: 50px;
+    font-size: 1.3em;
+    background-color: darkred;
+    color: white;
+    border-radius: 5px;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    z-index: 1;
   }
-  .social-media {
-    display: none;
-  }
+  
 }
 
 /* Code highlighting */
