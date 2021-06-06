@@ -1,0 +1,84 @@
+
+.blog {
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.blog > a > h1 {
+  font-family: "IBM Plex Serif";
+  font-size: 20px;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  padding-left: 5px;
+}
+.blog > a {
+  text-decoration: none;
+}
+.blog > a > p {
+  border-top: 1px dotted black;
+  margin: 0px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: black;
+}
+.blog:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+
+/* Table configuration  */
+table {
+  width: 100%;
+  text-align: center;
+  margin: 0%;
+  border-collapse: collapse;
+  overflow: scroll;
+  font-size: 18px;
+}
+th, td {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid black;
+}
+thead {
+  border-top: 1px solid black;
+}
+
+table > caption {
+  font-family: 'Playfair Display SC', serif;
+  color: darkred;
+  font-weight: bold;
+}
+
+tr:hover{
+  background-color: black;
+  color: white;
+}
+figure {
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+figure > figcaption {
+  text-align: center;
+  color: darkred;
+  font-size: 15px;
+  font-family: "Fira Code";
+}
+@media only screen and (min-width: 900px) {
+  img {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+li {
+  font-size: 18px;
+  font-family: "IBM Plex Serif"
+}
