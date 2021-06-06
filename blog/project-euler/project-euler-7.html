@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../asset/css/home.css">
+  <link rel="stylesheet" href="../../asset/css/blog.css">
+  <link rel="stylesheet" href="../../asset/css/code.css">
+  <title>TheMartian0x48</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="title">
+      <a href="../../index.html">
+        <h1>
+          TheMartian0x48
+        </h1>
+      </a>
+    </div>
+    <div class="page">
+      <button id="button-1">
+        <a href="../../pages/blog.html">Blog</a>
+      </button>
+      <button id="button-2">
+        <a href="../../pages/project.html">Project</a>
+      </button>
+      <button id="button-3">
+        <a href="../../pages/resume.html">Resume</a>
+      </button>
+      <button id="button-4">
+        <a href="../../pages/adventure.html">Adventure</a>
+      </button>
+      <button id="button-5">
+        <a href="../../pages/about.html">About</a>
+      </button>
+      <button id="button-6">
+        <a href="../../pages/contact.html">Contact</a>
+      </button>
+    </div>
+    <div class="content">
+    <h1>Project Euler : Problem 7</h1>
+
+<h3>Link</h3>
+
+<p><a href="https://projecteuler.net/problem=7">https://projecteuler.net/problem=7</a></p>
+
+<h3>Hints</h3>
+
+<p>Prime Number, Number Theory, <a href="https://en.wikipedia.org/wiki/Prime_number_theorem">Prime Density</a></p>
+
+<h3>Source Code</h3>
+
+<p>[ C++ ]</p>
+
+<div class="codehilite"><pre><span></span><code><span class="cp">#include</span> <span class="cpf">&lt;bits/stdc++.h&gt;</span><span class="cp"></span>
+<span class="k">using</span> <span class="k">namespace</span> <span class="nn">std</span><span class="p">;</span>
+
+
+<span class="c1">// return all primes in range (1, n)</span>
+<span class="n">vector</span><span class="o">&lt;</span><span class="kt">long</span> <span class="kt">long</span><span class="o">&gt;</span> <span class="n">GetPrimes</span><span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">n</span><span class="p">)</span> <span class="p">{</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="kt">bool</span><span class="o">&gt;</span> <span class="n">is_prime</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="nb">true</span><span class="p">);</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="kt">long</span> <span class="kt">long</span><span class="o">&gt;</span> <span class="n">res</span><span class="p">;</span>
+  <span class="n">res</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+  <span class="c1">// discard all even number &gt; 2</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">4</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span>
+    <span class="n">is_prime</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+  <span class="c1">// only check for odd number</span>
+  <span class="k">for</span> <span class="p">(</span><span class="kt">long</span> <span class="kt">long</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">3</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span> <span class="o">+=</span> <span class="mi">2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">is_prime</span><span class="p">[</span><span class="n">i</span><span class="p">])</span> <span class="p">{</span>
+      <span class="k">for</span> <span class="p">(</span> <span class="kt">long</span> <span class="kt">long</span> <span class="n">j</span> <span class="o">=</span> <span class="n">i</span> <span class="o">*</span> <span class="n">i</span><span class="p">;</span> <span class="n">j</span> <span class="o">&lt;</span> <span class="n">n</span><span class="p">;</span> <span class="n">j</span> <span class="o">+=</span> <span class="n">i</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">is_prime</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">false</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="n">res</span><span class="p">.</span><span class="n">push_back</span><span class="p">(</span><span class="n">i</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="n">res</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="kt">int</span> <span class="n">main</span><span class="p">()</span> <span class="p">{</span>
+  <span class="kt">long</span> <span class="kt">long</span> <span class="n">n</span> <span class="o">=</span> <span class="mf">1e6</span><span class="p">;</span>
+  <span class="n">vector</span><span class="o">&lt;</span><span class="kt">long</span> <span class="kt">long</span><span class="o">&gt;</span> <span class="n">primes</span> <span class="o">=</span> <span class="n">GetPrimes</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+  <span class="n">cout</span> <span class="o">&lt;&lt;</span> <span class="n">primes</span><span class="p">[</span><span class="mi">10000</span><span class="p">]</span> <span class="o">&lt;&lt;</span> <span class="n">endl</span><span class="p">;</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+
+    </div>
+    <div class="footer">
+      <button id="footar-button-1">
+        <a href="https://github.com/TheMartian0x48/" target="_blank">Github</a>
+      </button>
+      <button id="footar-button-2">
+        <a href="https://www.linkedin.com/in/themartian0x48/" target="_blank">Linkedin</a>
+      </button>
+    </div>
+    </div>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+</body>
+</html>
