@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+
+
+body {
+  /* margin: 0px; */
+  padding: 0px;
+}
+
+
+.container {
+  width: 900px;
+  padding: 0px;
+  position: relative;
+  left: 250px;
+  background-color: white;
+  padding-bottom: 1em;
+  box-shadow: 1px;
+  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
+  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+@media only screen and (max-width: 899px) {
+  .container {
+    margin: 0px;
+    width: 98%;
+    left: 0px;
+    box-shadow: none;
+  }
+}
+/* navigation start */
+
+.nav {
+  height: max-content;
+  padding: 1em 50px 0em 50px;
+  display: grid;
+  grid-template-rows: auto auto;
+  font-size: 25px;
+}
+
+.banner {
+  grid-column: 1/1;
+  color: #a90433;
+}
+.banner > a {
+  color: #a90433;
+}
+
+.menu {
+  grid-column: 2/2;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.menu > a {
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* navigation end */
+.footer > a{
+  padding-left: 2em;
+  padding-right: 2em;
+  margin: auto;
+  font-size: 1.4em;
+  color: #a90433;
+  font-weight: bold;
+}
+
+/* content */
+.content {
+  font-family: "IBM Plex Serif";
+  font-size: 1.1em;
+  text-align: justify;
+  padding: 1em 50px 0em 50px;
+}
+/* headers start*/
+ h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+} 
+
+h1 {
+  font-size: 2em;
+  color: #a90433;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+h2 {
+  font-size: 1.5em;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h3, h4, h5, h6 {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+/* headers end */
+
+/* p start */
+p {
+  margin: 0px;
+  padding: 0px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+/* p end */
+
+/* blockquote start */
+blockquote {
+  margin: 0px;
+  padding: 0px 30px 10px 30px;
+  font-style: italic;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+blockquote > h3 {
+  color: #a90433;;
+}
+/* TODO cite */
+/* blockquote end */
+
+/* dl start */
+dl {
+  margin: 0px;
+  padding: 0px;
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+dt {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+dd{
+  margin: 0px;
+  padding-bottom: 5px;
+  padding-left: 1em;
+}
+/* dl end */
+
+/* ul ol start */
+
+ul, ol {
+  margin: 10px 0px 10px 0px;
+}
+li {
+  margin: 0px;
+  padding: 0px;
+}
+/* ul ol end */
+
+/* details start */
+details > p {
+  margin-left: 1em;
+}
+/* details end */
+
+/* table start */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+table > caption {
+  color: #a90433;
+  font-style: italic;
+  font-weight: bold;
+}
+thead {
+  border-top: 1px solid black;
+}
+
+th, td {
+  border-bottom: 1px solid black;
+  text-align: center;
+  font-size: 0.95em;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+
+tr:hover {
+  background-color: #a90433;
+  color: white;
+  font-size: 1.1em;
+}
+/* table end */
+
+/* img start */
+img {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+figure {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+}
+figcaption {
+  text-align: center;
+  color: #a90433;
+  font-size: 0.95em;
+  font-style: italic;
+}
+
+.poster {
+  width: 100%;
+}
+
+/* img end */
+
+/* audio video start*/
+audio, video {
+  width: 100%;
+}
+iframe {
+  width: 100%;
+}
+
+/* link start */
+a{
+  color: blue;
+  text-decoration: none;
+}
+/* link end */
+
+pre, span {
+  font-family:  "Fira Code";
+  font-size: 1em;
+}
+pre{
+  overflow-x: auto;
+}
+.codehilite {
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+}
+.codehilite > h4 {
+  color: #a90433;
+}
