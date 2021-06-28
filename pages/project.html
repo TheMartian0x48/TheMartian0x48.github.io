@@ -5,50 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../asset/css/home.css">
-  <link rel="stylesheet" href="../asset/css/project.css">
-  <link rel="stylesheet" href="../asset/css/blog.css">
-  <title>TheMartian0x48</title>
+  <link rel="stylesheet" href="../asset/css/a.css">
+  <link rel="stylesheet" href="../asset/css/code.css">
+  <title>Document</title>
 </head>
 
 <body>
+
   <div class="container">
-    <div class="title">
-      <a href="../index.html">
-        <h1>
-          TheMartian0x48
-        </h1>
-      </a>
+    <div class="nav">
+      <div class="banner">
+        <a href="../index.html">TheMartian0x48</a>
+      </div>
+      <div class="menu">
+        <a href="../pages/blog.html" >Blog</a>
+        <a href="../pages/resume.html" >Resume</a>
+        <a href="../pages/adventure.html" >Adventure</a>
+        <a href="../pages/about.html" >About</a>
+      </div>
     </div>
-    <div class="page">
-        <button id="button-1">
-          <a href="blog.html">Blog</a>
-        </button>
-        <button id="button-2">
-          <a href="project.html">Project</a>
-        </button>
-        <button id="button-3">
-          <a href="resume.html">Resume</a>
-        </button>
-        <button id="button-4">
-          <a href="adventure.html">Adventure</a>
-        </button>
-        <button id="button-5">
-          <a href="about.html">About</a>
-        </button>
-        <button id="button-6">
-          <a href="contact.html">Contact</a>
-        </button>
-    </div>
-    <div class="content">
-      <p class="poster">
-        Project
-      </p>
+    <div class="content" id="content">
+      <h1 style="text-align: center; font-size: 3em;">PROJECTS</h1>
+      <hr>
       <div class="project">
-        <h3>
+        <h2>
           Cryptty
-        </h3>
-        <img src="../asset/img/cryptty.png" alt="Cryptty">
+        </h2>
+        <img class="poster" src="../asset/img/cryptty.png" alt="Cryptty">
         <p>
           Cryptty is a peer to peer chat application. It used PGP public key to encrypt the 
           messages. Chat application uses API to fetch public key from a centralized server.
@@ -62,11 +45,12 @@
           [ <a href="https://github.com/TheMartian0x48/cryptty" target="_blank"> Github </a> ]
         </p>
       </div>
+      <hr>
       <div class="project">
-        <h3>
-          Endecry : Cryto hash generator and crytpography encoder and decoder
-        </h3>
-        <img src="../asset/img/endecry.png" alt="Endecry">
+        <h2>
+          Endecry
+        </h2>
+        <img class="poster" src="../asset/img/endecry.png" alt="Endecry">
         <p>
           Endecry is a terminal based software which generate crytpographical hash and 
           encode and decode using advance crytpographical cipher.
@@ -82,14 +66,19 @@
         </p>
       </div>
     </div>
-    <div class="footer">
-      <button id="footar-button-1">
-        <a href="https://github.com/TheMartian0x48/" target="_blank">Github</a>
-      </button>
-      <button id="footar-button-2">
-        <a href="https://www.linkedin.com/in/themartian0x48/" target="_blank">Linkedin</a>
-      </button>
-    </div>
   </div>
-</body>
-</html>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+      },
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+  
+  </html>
