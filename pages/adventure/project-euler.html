@@ -5,71 +5,41 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../asset/css/home.css">
-  <title>TheMartian0x48</title>
+  <link rel="stylesheet" href="../../asset/css/a.css">
+  <title>Document</title>
 </head>
 
 <body>
-  <style>
-    .count-container {
-      display: flex;
-      flex-wrap: wrap;
-    }
 
-    #question {
-      display: grid;
-      grid-template-columns: auto auto;
-    }
-
-    #question>p {
-      margin: 2px;
-      font-family: "Fira Code";
-    }
-
-    #question>p>a {
-      text-decoration: none;
-      color: blue;
-      font-family: "Fira Code";
-    }
-
-    #title {
-      font-size: 40px;
-      text-align: center;
-    }
-  </style>
   <div class="container">
-    <div class="title">
-      <a href="../../index.html">
-        <h1>
-          TheMartian0x48
-        </h1>
-      </a>
-    </div>
-    <div class="page">
-      <button id="button-1">
+    <div class="nav">
+      <div class="banner">
+        <a href="../../index.html">TheMartian0x48</a>
+      </div>
+      <div class="menu">
         <a href="../blog.html">Blog</a>
-      </button>
-      <button id="button-2">
         <a href="../project.html">Project</a>
-      </button>
-      <button id="button-3">
-        <a href="../resume.html">Resume</a>
-      </button>
-      <button id="button-4">
+        <a href="../resume.html" >Resume</a>
         <a href="../adventure.html">Adventure</a>
-      </button>
-      <button id="button-5">
-        <a href="../about.html">About</a>
-      </button>
-      <button id="button-6">
-        <a href="../contact.html">Contact</a>
-      </button>
+        <a href="../about.html" >About</a>
+      </div>
     </div>
-    <div class="content">
-      <p class="poster">
+    <div class="content" id="content">
+      <h1 style="text-align: center;font-size:3em;">
         Project Euler
-      </p>
+      </h1>
       <hr>
+      <style>
+        .count-container{
+          display: flex;
+          flex-wrap: wrap;
+          font-family: "Fira Code";
+        }
+        #question {
+          padding-left: 10px;
+          display: flex;
+        }
+      </style>
       <div class="count-container">
         
           
@@ -343,9 +313,13 @@
         
           
             <div id="question">
-              <p> 032. </p>
-              <p> ⚪ </p>
-          </div>
+              <p> 
+                <a href="https://themartian0x48.github.io/blog/project-euler/project-euler-32.html" target="_blank">
+                  032.
+                </a>
+              </p>
+              <p> ⚫ </p>
+            </div>
           
         
           
@@ -357,9 +331,13 @@
         
           
             <div id="question">
-              <p> 034. </p>
-              <p> ⚪ </p>
-          </div>
+              <p> 
+                <a href="https://themartian0x48.github.io/blog/project-euler/project-euler-34.html" target="_blank">
+                  034.
+                </a>
+              </p>
+              <p> ⚫ </p>
+            </div>
           
         
           
@@ -371,9 +349,13 @@
         
           
             <div id="question">
-              <p> 036. </p>
-              <p> ⚪ </p>
-          </div>
+              <p> 
+                <a href="https://themartian0x48.github.io/blog/project-euler/project-euler-36.html" target="_blank">
+                  036.
+                </a>
+              </p>
+              <p> ⚫ </p>
+            </div>
           
         
           
@@ -649,9 +631,13 @@
         
           
             <div id="question">
-              <p> 074. </p>
-              <p> ⚪ </p>
-          </div>
+              <p> 
+                <a href="https://themartian0x48.github.io/blog/project-euler/project-euler-74.html" target="_blank">
+                  074.
+                </a>
+              </p>
+              <p> ⚫ </p>
+            </div>
           
         
           
@@ -838,15 +824,19 @@
         
       </div>
     </div>
-
-    <div class="footer">
-      <button id="footar-button-1">
-        <a href="https://github.com/TheMartian0x48/" target="_blank">Github</a>
-      </button>
-      <button id="footar-button-2">
-        <a href="https://www.linkedin.com/in/themartian0x48/" target="_blank">Linkedin</a>
-      </button>
-    </div>
   </div>
-</body>
-</html>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+      },
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+  </body>
+  
+  </html>

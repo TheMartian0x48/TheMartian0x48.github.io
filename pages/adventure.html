@@ -5,64 +5,74 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../asset/css/home.css">
+  <link rel="stylesheet" href="../asset/css/a.css">
   <link rel="stylesheet" href="../asset/css/blog.css">
-  <title>TheMartian0x48</title>
+  <title>Document</title>
 </head>
 
 <body>
+
   <div class="container">
-    <div class="title">
-      <a href="../index.html">
-        <h1>
-          TheMartian0x48
-        </h1>
-      </a>
-    </div>
-    <div class="page">
-        <button id="button-1">
-          <a href="blog.html">Blog</a>
-        </button>
-        <button id="button-2">
-          <a href="project.html">Project</a>
-        </button>
-        <button id="button-3">
-          <a href="resume.html">Resume</a>
-        </button>
-        <button id="button-4">
-          <a href="adventure.html">Adventure</a>
-        </button>
-        <button id="button-5">
-          <a href="about.html">About</a>
-        </button>
-        <button id="button-6">
-          <a href="contact.html">Contact</a>
-        </button>
-    </div>
-    <div class="content">
-      <p class="poster">
-        Adventure
-      </p>
-      <div class="blog">
-        <a href="adventure/project-euler.html">
-          <h1 class="blog-title">
-            Project Euler
-          </h1>
-          <p>
-            This adventure is about solving first 100 problems of Project Euler. 
-            Here, You will found hints and solution.
-          </p>
-        </a>
+    <div class="nav">
+      <div class="banner">
+        <a href="../index.html">TheMartian0x48</a>
+      </div>
+      <div class="menu">
+        <a href="../pages/blog.html">Blog</a>
+        <a href="../pages/project.html">Project</a>
+        <a href="../pages/resume.html">Resume</a>
+        <a href="../pages/adventure.html">Adventure</a>
+        <a href="../pages/about.html">About</a>
       </div>
     </div>
-    <div class="footer">
-      <button id="footar-button-1">
-        <a href="https://github.com/TheMartian0x48/" target="_blank">Github</a>
-      </button>
-      <button id="footar-button-2">
-        <a href="https://www.linkedin.com/in/themartian0x48/" target="_blank">Linkedin</a>
-      </button>
+    <div class="content" id="content">
+      <h1 style="font-size: 3em; text-align: center;">Adventure</h1>
+      <hr>
+      <style>
+        summary {
+          color: #a90433;
+          font-size: 1.15em;          
+        }
+      </style>
+      <div class="adventure">
+
+        <details>
+          <summary>Project Euler</summary>
+          <p>Project Euler, a website created by Colin Hughes in 2001, is a collection of computational math 
+            problems. This adventure is about solving those problems. To comply with their terms and conditions,
+            I will only post about first hundred question. <br>
+            <a href="adventure/project-euler.html"> Link </a>
+          </p>
+        </details>
+
+        <details>
+          <summary>Bandit by OverTheWire</summary>
+          <p>Bandit is a beginner level CTF. Bandit will teach you basic bash commands. In this adventure,
+            i will be posting about my approach.
+            <br><a href=""> Link </a>
+          </p>
+        </details>
+      </div>
+      <p></p><p></p><p></p><p></p>
+      <p></p><p></p><p></p><p></p>
+      <p></p><p></p><p></p><p></p>
+      <p></p><p></p><p></p><p></p>
+      <p></p><p></p><p></p><p></p>
+      <p></p><p><p></p><p></p>
     </div>
   </div>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [
+          ["$", "$"],
+          ["\\(", "\\)"],
+        ],
+      },
+    };
+  </script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 </body>
+
 </html>

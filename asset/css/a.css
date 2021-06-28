@@ -5,7 +5,6 @@
 
 
 body {
-  /* margin: 0px; */
   padding: 0px;
 }
 
@@ -14,12 +13,10 @@ body {
   width: 900px;
   padding: 0px;
   position: relative;
-  left: 250px;
+  left: calc(50% - 450px);
   background-color: white;
   padding-bottom: 1em;
   box-shadow: 1px;
-  /* box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset; */
-  /* box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; */
   box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
 }
 @media only screen and (max-width: 899px) {
@@ -51,7 +48,7 @@ body {
 .menu {
   grid-column: 2/2;
   display: grid;
-  grid-template-columns: auto auto auto auto;
+  grid-template-columns: auto auto auto auto auto;
 }
 
 .menu > a {
@@ -235,10 +232,7 @@ pre, span {
 pre{
   overflow-x: auto;
 }
-.codehilite {
-  /* border-top: 1px solid black;
-  border-bottom: 1px solid black; */
-}
+
 .codehilite > h4 {
   color: #a90433;
 }
