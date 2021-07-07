@@ -1,5 +1,5 @@
 var myydata = JSON.parse('{"user":"martian","root":{"name":"/","link":"https://themartian0x48.github.io/index.html","files":[["blog","https://themartian0x48.github.io/pages/blog.html"],["project","https://themartian0x48.github.io/pages/project.html"],["resume","https://themartian0x48.github.io/pages/resume.html"],["about","https://themartian0x48.github.io/pages/about.html"]],"children":[{"name":"adventure","link":"https://themartian0x48.github.io/pages/adventure.html","files":[["Project-Euler","https://themartian0x48.github.io/pages/adventure/project-euler.html"],["Bandit-by-OverTheWire","https://themartian0x48.github.io/pages/adventure.html"]],"children":[{"name":"project-euler","link":"https://themartian0x48.github.io/pages/adventure/project-euler.html","files":[],"children":[]}]}]}}');
-var  mydata = "";
+var mydata = "";
 
 class TreeNode {
   constructor() {
@@ -312,8 +312,21 @@ class Help extends Command {
   }
 }
 
-url = document.location + "asset/json/web-terminal.json";
+function welcome() {
+  let terminal = document.getElementById('web-terminal-window');
+  let div = document.createElement('div');
+  div.setAttribute('id', 'web-terminal-success-result');
+  let p = document.createElement("p");
+  p.innerHTML = "<br>.----------------.<br>| TheMartian0x48 |<br>'----------------'<br>cd &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp; change directory<br>" +
+    "help &nbsp;&nbsp;:&nbsp;&nbsp;  show this help window<br>" +
+    "ls &nbsp;&nbsp;&nbsp;&nbsp;:&nbsp;&nbsp; list directory contents<br>" +
+    "Open &nbsp;&nbsp;:&nbsp;&nbsp; open link in new tab<br>" +
+    "pwd &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp; present working directory";
+  div.appendChild(p);
+  terminal.appendChild(div);
+}
 
+url = document.location + "asset/json/web-terminal.json";
 
 let terminal = new WebTerminal();
 fetch(url)
@@ -321,6 +334,7 @@ fetch(url)
     return response.json();
   }).then((data) => {
     terminal.init(data);
+    welcome();
     terminal.createCommandBox();
   })
   .catch(function (err) {
@@ -331,7 +345,7 @@ fetch(url)
     p.innerHTML = "Unable to fetch data.";
     div.appendChild(p);
     terminal.appendChild(div);
-  }); 
+  });
 terminal.addCommand(new Ls());
 terminal.addCommand(new Open());
 terminal.addCommand(new Cd());
