@@ -490,7 +490,7 @@ function welcome() {
   terminal.appendChild(div);
 }
 
-url = document.location + "web-terminal.json";
+url = document.location + "asset/json/web-terminal.json";
 
 let terminal = new WebTerminal();
 /**
