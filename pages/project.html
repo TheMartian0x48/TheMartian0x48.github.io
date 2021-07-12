@@ -5,27 +5,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../asset/css/a.css">
-  <link rel="stylesheet" href="../asset/css/code.css">
-  <title>Document</title>
+  <link rel="stylesheet" href="../asset/css/style.css">
+  <link rel="stylesheet" href="../asset/css/web-terminal.css">
+  <link rel="stylesheet" href="../asset/css/blog.css">
+  <link rel="stylesheet" href="../asset/css/content.css">
+  <title>TheMartian0x48</title>
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="nav">
-      <div class="banner">
+  <div id="container">
+    <div id="menu">
+      <div id="top-part">
         <a href="../index.html">TheMartian0x48</a>
       </div>
-      <div class="menu">
-        <a href="../pages/blog.html" >Blog</a>
-        <a href="../pages/project.html" >Project</a>
-        <a href="../pages/resume.html" >Resume</a>
-        <a href="../pages/adventure.html" >Adventure</a>
-        <a href="../pages/about.html" >About</a>
+      <div id="mid-part">
+        <a href="../pages/blog.html">Blog</a>
+        <a href="../pages/adventure.html">Adventure</a>
+        <a href="../pages/project.html">Project</a>
+        <a href="../pages/resume.html" target="_blank">Resume</a>
+        <a href="../pages/about.html">About</a>
       </div>
+      <div id="bottom-part">
+        <a href="https://github.com/TheMartian0x48/" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/themartian0x48/" target="_blank">Linkedin</a>
+      </div>
+
     </div>
-    <div class="content" id="content">
+    <div id="content">
       <h1 style="text-align: center; font-size: 3em;">PROJECTS</h1>
       <hr>
       <div class="project">
@@ -34,7 +40,7 @@
         </h2>
         <img class="poster" src="../asset/img/cryptty.png" alt="Cryptty">
         <p>
-          Cryptty is a peer to peer chat application. It used PGP public key to encrypt the 
+          Cryptty is a peer to peer chat application. It used PGP public key to encrypt the
           messages. Chat application uses API to fetch public key from a centralized server.
         </p>
         <p>
@@ -42,7 +48,7 @@
           Computer Network, Python 3, Django, Crytpography
         </p>
         <p>
-          <b>Link : </b> 
+          <b>Link : </b>
           [ <a href="https://github.com/TheMartian0x48/cryptty" target="_blank"> Github </a> ]
         </p>
       </div>
@@ -53,7 +59,7 @@
         </h2>
         <img class="poster" src="../asset/img/endecry.png" alt="Endecry">
         <p>
-          Endecry is a terminal based software which generate crytpographical hash and 
+          Endecry is a terminal based software which generate crytpographical hash and
           encode and decode using advance crytpographical cipher.
           Some of available algorithms are MD2, MD4, SHA1, SHA-256 etc.
         </p>
@@ -62,24 +68,27 @@
           C++, Crytpography
         </p>
         <p>
-          <b>Link : </b> 
-          [ <a href="https://github.com/TheMartian0x48/endecry-cryptographic-hash-and-cipher" target="_blank"> Github </a> ]
+          <b>Link : </b>
+          [ <a href="https://github.com/TheMartian0x48/endecry-cryptographic-hash-and-cipher" target="_blank"> Github
+          </a> ]
         </p>
       </div>
+
+
     </div>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </div>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ["$", "$"],
-          ["\\(", "\\)"],
-        ],
-      },
-    };
-  </script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>

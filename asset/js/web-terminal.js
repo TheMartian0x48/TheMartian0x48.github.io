@@ -490,7 +490,7 @@ function welcome() {
   terminal.appendChild(div);
 }
 
-url = document.location + "asset/json/web-terminal.json";
+url = "https://themartian0x48.github.io/asset/json/web-terminal.json";
 
 let terminal = new WebTerminal();
 /**
