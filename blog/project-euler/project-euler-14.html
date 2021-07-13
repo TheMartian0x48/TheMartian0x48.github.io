@@ -5,28 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../../asset/css/a.css">
+  <link rel="stylesheet" href="../../asset/css/style.css">
+  <link rel="stylesheet" href="../../asset/css/web-terminal.css">
+  <link rel="stylesheet" href="../../asset/css/blog.css">
+  <link rel="stylesheet" href="../../asset/css/content.css">
   <link rel="stylesheet" href="../../asset/css/code.css">
-  <title>Document</title>
+  <script src="../../asset/js/main.js"></script>
+  <title>TheMartian0x48</title>
 </head>
 
 <body>
-
-  <div class="container">
-    <div class="nav">
-      <div class="banner">
+  <img src="../../asset/icon/meun.svg" id="menu-icon" onclick="toggle_on()">
+  <img src="../../asset/icon/close.svg" id="close-icon" onclick="toggle_off()">
+  <div id="container">
+    <div id="menu">
+      <div id="top-part">
         <a href="../../index.html">TheMartian0x48</a>
       </div>
-      <div class="menu">
-        <a href="../../pages/blog.html" >Blog</a>
-        <a href="../../pages/project.html" >Project</a>
-        <a href="../../pages/resume.html" >Resume</a>
-        <a href="../../pages/adventure.html" >Adventure</a>
-        <a href="../../pages/about.html" >About</a>
+      <div id="mid-part">
+        <a href="../../pages/blog.html">Blog</a>
+        <a href="../../pages/adventure.html">Adventure</a>
+        <a href="../../pages/project.html">Project</a>
+        <a href="../../pages/resume.html" target="_blank">Resume</a>
+        <a href="../../pages/about.html">About</a>
       </div>
+      <div id="bottom-part">
+        <a href="https://github.com/TheMartian0x48/" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/themartian0x48/" target="_blank">Linkedin</a>
+      </div>
+
     </div>
-    <div class="content" id="content">
+    <div id="content">
       <h1>Project Euler : Problem 14</h1>
+
+<hr />
 
 <h3>Link</h3>
 
@@ -80,19 +92,19 @@
 </code></pre></div>
 
     </div>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
   </div>
-  <script>
-    MathJax = {
-      tex: {
-        inlineMath: [
-          ["$", "$"],
-          ["\\(", "\\)"],
-        ],
-      },
-    };
-  </script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-  </body>
-  
-  </html>
+</body>
+
+</html>
