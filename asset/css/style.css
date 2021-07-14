@@ -14,7 +14,6 @@ body {
   width: 60px;
   box-shadow: none;
   position: fixed;
-  right: 30px;
   bottom: 30px;
   margin: 0px;
   display: unset;
@@ -24,6 +23,15 @@ body {
 #close-icon {
   visibility: hidden;
   z-index: 5;
+  right: 40px;
+  background-color: gray;
+  border-radius: 50%;
+}
+
+#menu-icon {
+  background-color: gray;
+  border-radius: 50%;
+  right: 30px;
 }
 
 #menu {
