@@ -1,0 +1,199 @@
+:root {
+    --gyp_bg: #f5e8d5;
+    --light_black: rgba(0, 0, 0, 0.18);
+}
+
+body {
+    background: #282c34;
+}
+
+#container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 16px;
+    font-family: "Nanum Myeongjo", serif;
+    font-weight: 400;
+    /* background: #f1e1c9; */
+    background-color: var(--gyp_bg);
+    border: 1px solid black;
+    width: 650px;
+    height: 90%;
+    max-height: 900px;
+    max-width: 650px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    text-align: justify;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#container::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+h1 {
+    font-size: 22px;
+    font-family: "Nanum Myeongjo", serif;
+    font-style: normal;
+    /* font-weight: 800; */
+    margin: 0px;
+    padding: 0px;
+}
+
+h2 {
+    color: #084357;
+    font-size: 19px;
+    /* font-weight: 400; */
+}
+
+h3 {
+    color: #084357;
+    font-size: 17px;
+    /* font-weight: 400; */
+}
+
+#menu_divider {
+    margin-top: 12px;
+}
+
+.menu_button:hover {
+    border: 1px solid;
+    color: #f5e8d5;
+    background-color: black;
+}
+
+.menu_button {
+    background-color: var(--gyp_bg);
+    border: 1px solid;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    padding: 2px 3px;
+    margin-right: 5px;
+}
+
+.menu_button_text {
+    font-weight: lighter;
+    font-size: 16px;
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+}
+
+#blog_name {
+    font-size: 16px;
+    font-family: "Nanum Myeongjo", serif;
+}
+
+#content {
+    margin-top: 20px;
+}
+
+blockquote {
+    border-left: 1px solid;
+    padding-left: 5px;
+    margin: 0px 1em;
+}
+
+code {
+    /* font-weight: lighter; */
+    font-family: "Courier New", Courier, monospace;
+}
+
+pre {
+    border: 1px solid var(--light_black);
+    padding: 5px;
+    border-collapse: collapse;
+    overflow-x: scroll;
+    /* box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px; */
+}
+
+pre::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+.codehilite > pre {
+    padding: 5px 10px;
+}
+
+.codehilite {
+    background: var(--gyp_bg);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow-x: scroll;
+}
+
+table::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+tbody > tr {
+    border-top: 1px solid var(--light_black);
+}
+
+td {
+    padding-right: 10px;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+img {
+    width: 400px;
+    display: flex;
+    margin: auto;
+}
+
+.katex-display {
+    overflow-x: scroll;
+    hight: content;
+    font-size: 15px;
+    font-family: "Courier New", Courier, monospace;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.katex::-webkit-scrollbar {
+    /* WebKit */
+    width: 0;
+    height: 0;
+}
+
+#tags_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tag_button {
+    background-color: var(--gyp_bg);
+    border: 1px solid;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    padding: 2px 3px;
+    margin: 10px;
+}
+
+.tag_button_text {
+    font-weight: lighter;
+    font-size: 16px;
+    font-family: "Nanum Myeongjo", serif;
+    text-align: center;
+}
+
+.tag_button:hover {
+    border: 1px solid;
+    color: #f5e8d5;
+    background-color: black;
+}
